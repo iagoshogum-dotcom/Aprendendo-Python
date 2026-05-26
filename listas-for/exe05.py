@@ -1,9 +1,13 @@
 senhaCorreta ="iago123"
 
-for s in range(4):
+for s in range(1 ,4):
     senha =input("digite sua senha")
-    if senha == "iago123":
+    if senha == senhaCorreta:
         print("Acesso permitido")
         break
-    else:
-        print("acesso negado")
+    elif senha != senhaCorreta:
+        print(f"Senha incorreta tente novamente"),[3]
+        print(f"essa foi sua {s} tentativa")
+
+else:
+    print("Conta Bloqueada")
