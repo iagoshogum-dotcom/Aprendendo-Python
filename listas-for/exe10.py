@@ -1,6 +1,5 @@
 import random
 numeroSorteado = random.randint(1,20)
-print(numeroSorteado)
 numeroEscolhido = int(input("tente adivinhar o numero que pensei"))
 
 while numeroSorteado != numeroEscolhido:
