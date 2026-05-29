@@ -1,31 +1,27 @@
-idade = []
-genero = []
-idadesMaior18 = []
-generosMas = []
-pessoaCadastro = input("vamos começar a realizar cadastros? (s/n)")
+maioresDe18 = []
+generoM = []
+generoFmenorDe20 = []
+
+pessoaCadastro = "s"
 
 while pessoaCadastro == "s":
-    idadePer = int(input("qual sua idade"))
-    idade.append(idadePer)
-    generoPer = input("qual seu genero")
-    genero.append(generoPer)
-    pessoaCadastro = input("pessoa cadastrada com sucesso, quer realizar mais cadastros? (s/n)")
+    idade = int(input("qual a idade?"))
+    genero = input("qual o genero?").upper()
 
-for i in idade:
-    if i > 18 :
-        idadesMaior18.append(i)
-    for g in genero:
-        if g == "M" :
-            generosMas.append(g)
+    if genero == "M":
+        generoM.append(genero)
 
+    if idade > 18 :
+        maioresDe18.append(idade)
 
+    if genero == "F" and idade < 20:
+        generoFmenorDe20.append(genero+str(idade))
 
+    pessoaCadastro = input("a mais cadastros a fazer? (s/n)")
 
-
-print(f"sao {len(generosMas)} pessoas de genero masculino")
-
-print(f"sao {len(idadesMaior18)} pessoas de maiores")
-
+print(f"a quantidade de pessoas maiores de 18 sao {len(maioresDe18)}")
+print(f"a quantidade de pessoas de genero masculino sao {len(generoM)}")
+print(f"a quantidade de pessoas de genero femenino e menores de 20 anos sao {len(generoFmenorDe20)}")
 
 
 
