@@ -11,10 +11,10 @@ while pessoaCadastro == "s":
     if genero == "M":
         generoM.append(genero)
 
-    if idade > 18 :
+    elif idade > 18 :
         maioresDe18.append(idade)
 
-    if genero == "F" and idade < 20:
+    elif genero == "F" and idade < 20:
         generoFmenorDe20.append(genero+str(idade))
 
     pessoaCadastro = input("a mais cadastros a fazer? (s/n)")
