@@ -10,7 +10,7 @@ dados_profissionais = {
     "cargo": "Desenvolvedor Python",
     "empresa": "Senac",
     "salario": 10000000000,
-    "tempo_experiencia": 1,
+    "experiencia": "69",
     "linguagens": "Python"
 }
 perfil_completo = dados_pessoais|dados_profissionais
